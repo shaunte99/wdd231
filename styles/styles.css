@@ -1,34 +1,35 @@
-/* General Styles */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
     background-color: #0077b6;
     color: white;
+    padding: 1rem;
 }
 
-.logo {
+header img {
+    width: 50px;
     height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
 }
 
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: white;
+nav {
+    background-color: #03045e;
+    padding: 1rem;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     display: flex;
     gap: 1rem;
@@ -37,115 +38,86 @@ nav ul {
 nav a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.keynote-btn {
-    background-color: #00b4d8;
+#menu-button {
+    display: none;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+h1, h2 {
+    color: #0077b6;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course-card {
+    border: 1px solid #0077b6;
+    padding: 1rem;
+    border-radius: 8px;
+    width: calc(33% - 1rem);
+}
+
+.completed {
+    background-color: #90e0ef;
+}
+
+.filter-buttons button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #0077b6;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 5px;
-}
-
-.hero {
-    position: relative;
-    text-align: center;
-    color: white; /* Text color */
-}
-
-.hero-img {
-    width: 100%; 
-    height: auto; 
-    display: block;
-    object-fit: cover; 
-}
-
-.hero p {
-    position: absolute;
-    top: 50%;
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-size: 2rem; 
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
-
-
-h2 {
-    text-align: center;
-}
-
-.grid {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.events, .current-weather, .weather-forecast {
-    background: #caf0f8;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.business-cards {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-.business-card {
-    background: #0077b6;
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
 }
 
 footer {
-    background: #03045e;
+    background-color: #03045e;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
-.social-icons img {
-    height: 25px;
-    margin: 0 0.5rem;
-}
-
-/* Mobile Styles */
+/* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #0077b6;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    }
-
-    nav ul.show {
-        display: flex;
-    }
-
-    .menu-toggle {
+    #menu-button {
         display: block;
+        background-color: #0077b6;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
     }
 
-    .grid, .business-cards {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Desktop Styles */
-@media (min-width: 769px) {
-    .grid {
-        grid-template-columns: repeat(3, 1fr);
+    nav ul {
+        flex-direction: column;
     }
 
-    .business-cards {
-        grid-template-columns: repeat(3, 1fr);
+    nav ul.hidden {
+        display: none;
+    }
+
+    #courses-container {
+        flex-direction: column;
+    }
+
+    .course-card {
+        width: 100%;
     }
 }

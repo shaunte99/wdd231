@@ -1,101 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>South Africa Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Directory</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <header>
-        <img src="images/logo.png" alt="South Africa Chamber of Commerce Logo" class="logo">
-        <h1>South Africa</h1>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-        <nav>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-        <button class="keynote-btn">Keynote Tickets</button>
-    </header>
+  <header>
+    <h1>Chamber Directory</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#members">Members</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section class="hero">
-            <img src="images/heroimage.webp" alt="Hero Image" class="hero-img">
-            <p</p>
-        </section>
-    </main>
-    
+  <main>
+    <section id="intro">
+      <h2>Welcome to the Chamber Directory</h2>
+      <p>Find local businesses and organizations in your area.</p>
+    </section>
 
-        <h2>Home</h2>
+    <section id="members">
+      <button id="toggle-view">Toggle View</button>
+      <div id="member-container" class="grid-view"></div> <!-- Members will be displayed here -->
+    </section>
+  </main>
 
-        <div class="grid">
-            <section class="events">
-                <h3>Events</h3>
-                <p>Explore upcoming business events and networking opportunities across South Africa.</p>
-            </section>
-
-            <section class="current-weather">
-                <h3>Current Weather</h3>
-                <p><strong>72°F</strong></p>
-                <p>Partly Cloudy</p>
-                <p>High: 78°F | Low: 65°F</p>
-                <p>Humidity: 60%</p>
-                <p>Sunrise: 6:00 AM | Sunset: 6:30 PM</p>
-            </section>
-
-            <section class="weather-forecast">
-                <h3>Weather Forecast</h3>
-                <p>Today: <strong>75°F</strong></p>
-                <p>Wednesday: <strong>74°F</strong></p>
-                <p>Thursday: <strong>73°F</strong></p>
-            </section>
-        </div>
-
-        <section class="business-cards">
-            <div class="business-card">
-                <h4>Business Name</h4>
-                <p>Business Tag Line</p>
-                <p>Email: info@business.co.za</p>
-                <p>Phone: +27 12 345 6789</p>
-                <p>Website: business.co.za</p>
-            </div>
-
-            <div class="business-card">
-                <h4>Business Name</h4>
-                <p>Business Tag Line</p>
-                <p>Email: contact@company.co.za</p>
-                <p>Phone: +27 10 987 6543</p>
-                <p>Website: company.co.za</p>
-            </div>
-
-            <div class="business-card">
-                <h4>Business Name</h4>
-                <p>Business Tag Line</p>
-                <p>Email: support@enterprise.co.za</p>
-                <p>Phone: +27 21 654 9870</p>
-                <p>Website: enterprise.co.za</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p><strong>South Africa Chamber of Commerce</strong></p>
-        <p>80 Welkom St, Johannesburg, South Africa</p>
-        <p>Email: info@sachamber.org.za</p>
-        <p>Phone: +27 11 884 7890</p>
-        <div class="social-icons">
-            <img src="images/instagram.webp" alt="instagram">
-            <img src="images/x.webp" alt="X">
-            <img src="images/linkeden.png" alt="LinkedIn">
-        </div>
-        <p>© 2025 South Africa Chamber of Commerce</p>
-    </footer>
-
-   
-    <script src="scripts/script.js"></script>
+  <footer>
+    <p>&copy; 2025 Chamber Directory. All rights reserved.</p>
+  </footer>
 </body>
 </html>
