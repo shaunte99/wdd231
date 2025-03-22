@@ -1,0 +1,20 @@
+{
+    "members": [
+        {
+            "name": "ABC Tech Solutions",
+            "logo": "images/abc-tech.png",
+            "address": "123 Tech Street, Krugersdorp",
+            "phone": "+27 123 456 7890",
+            "website": "https://abctech.com",
+            "level": "Gold"
+        },
+        {
+            "name": "XYZ Marketing",
+            "logo": "images/xyz-marketing.png",
+            "address": "45 Ad Agency Road, Krugersdorp",
+            "phone": "+27 987 654 3210",
+            "website": "https://xyzmarketing.com",
+            "level": "Silver"
+        }
+    ]
+}

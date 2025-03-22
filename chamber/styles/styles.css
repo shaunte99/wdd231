@@ -1,86 +1,143 @@
-/* Basic Styling */
+/* Normalize styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #003d63;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.directory {
+  padding: 20px;
+}
+
+.view-toggle {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.grid-view, .list-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.list-view {
+  display: block;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
   header {
-    background-color: #0077b6;
-    color: white;
     padding: 20px;
-    text-align: center;
   }
-  
+
   nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  #member-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  .member-card {
-    background-color: #90e0ef;
-    padding: 20px;
-    border-radius: 8px;
     text-align: center;
   }
-  
-  .member-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  /* For mobile responsiveness */
-  @media screen and (max-width: 768px) {
-    #member-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    #member-container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* List View */
-  .list-view {
+
+  nav ul li {
     display: block;
+    margin-bottom: 10px;
   }
-  
+
   .grid-view {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
-  
+
+  .view-toggle {
+    text-align: center;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .grid-view {
+    grid-template-columns: 1fr;
+  }
+
+  .card h3 {
+    font-size: 1.2em;
+  }
+
+  .card p {
+    font-size: 0.9em;
+  }
+}

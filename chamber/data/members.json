@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Techmeets",
+        "address": "123 Main St, Johannesburg, Gauteng",
+        "phone": "+27 11 123 4567",
+        "website": "http://www.Techmeets.co.za",
+        "image": "tecmeets.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Lift",
+        "address": "456 Oak Ave, Cape Town, Western Cape",
+        "phone": "+27 21 234 5678",
+        "website": "http://www.Liftsouth.co.za",
+        "image": "itcompany.jfif",
+        "membershipLevel": 2
+    },
+    {
+        "name": "infinity ",
+        "address": "789 Pine Rd, Durban, KwaZulu-Natal",
+        "phone": "+27 31 345 6789",
+        "website": "http://www.infinitygroup.co.za",
+        "image": "infinity.jpg",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Force",
+        "address": "101 Maple Dr, Pretoria, Gauteng",
+        "phone": "+27 12 456 7890",
+        "website": "http://www.Force.co.za",
+        "image": "force11.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Creactive switch",
+        "address": "202 Birch Blvd, Port Elizabeth, Eastern Cape",
+        "phone": "+27 41 567 8901",
+        "website": "http://www.switch.co.za",
+        "image": "creactiveswitch.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Waveform",
+        "address": "303 Cedar Ln, Bloemfontein, Free State",
+        "phone": "+27 51 678 9012",
+        "website": "http://www.Waves.co.za",
+        "image": "waveform.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Study247",
+        "address": "404 Elm St, Nelspruit, Mpumalanga",
+        "phone": "+27 13 789 0123",
+        "website": "http://www.company7.co.za",
+        "image": "logo.webp",
+        "membershipLevel": 1
+    }
+]

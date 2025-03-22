@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chamber Directory</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <script src="scripts/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce Directory">
+    <meta name="author" content="Kamogelo Matsetela">
+    <meta property="og:title" content="Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html">
+    <title>Chamber of Commerce Directory</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/scripts.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Chamber Directory</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#members">Members</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="intro">
-      <h2>Welcome to the Chamber Directory</h2>
-      <p>Find local businesses and organizations in your area.</p>
-    </section>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="directory.html">Home</a></li>
+                <!-- Add other links if necessary -->
+            </ul>
+        </nav>
+    </header>
 
-    <section id="members">
-      <button id="toggle-view">Toggle View</button>
-      <div id="member-container" class="grid-view"></div> <!-- Members will be displayed here -->
-    </section>
-  </main>
+    <main>
+        <section class="directory">
+            <h1>Chamber of Commerce Members</h1>
+            <div class="view-toggle">
+                <button id="grid-view">Grid View</button>
+                <button id="list-view">List View</button>
+            </div>
+            <div id="members-container" class="grid-view">
+                <!-- Member Cards will be populated here by JavaScript -->
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Chamber Directory. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Kamogelo Matsetela | WDD 231 | Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
 </body>
 </html>
