@@ -1,0 +1,38 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #caf0f8;
+    color: #03045e;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: #0077b6;
+    padding: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    background: #90e0ef;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: square;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #03045e;
+}
