@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Krugersdorp | Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/discover.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover Krugersdorp</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Dynamic content from locations.json will be inserted here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Krugersdorp Chamber of Commerce</p>
+    </footer>
+
+    <!-- JSON Fetch Script -->
+    <script>
+        fetch('locations.json')
+            .then(response => response.json())
+            .then(data => {
+                const mainContent = document.querySelector('main');
+                
+                // Loop through the data and dynamically create content
+                data.locations.forEach(location => {
+                    const card = document.createElement('div');
+                    card.classList.add('card');
+                    
+                    // Create content for the card
+                    const h2 = document.createElement('h2');
+                    h2.textContent = location.name;
+                    card.appendChild(h2);
+                    
+                    const figure = document.createElement('figure');
+                    const img = document.createElement('img');
+                    img.src = location.image;
+                    img.alt = location.name;
+                    figure.appendChild(img);
+                    card.appendChild(figure);
+                    
+                    const address = document.createElement('address');
+                    address.textContent = location.address;
+                    card.appendChild(address);
+                    
+                    const description = document.createElement('p');
+                    description.textContent = location.description;
+                    card.appendChild(description);
+                    
+                    const button = document.createElement('button');
+                    button.textContent = 'Learn More';
+                    card.appendChild(button);
+                    
+                    // Append the card to the main content
+                    mainContent.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error loading JSON:', error));
+    </script>
+
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

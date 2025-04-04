@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Krugersdorp Game Reserve",
+        "image": "images/game-reserve.webp",
+        "address": "Krugersdorp, Gauteng, South Africa",
+        "description": "A beautiful game reserve offering wildlife viewing experiences.",
+        "link": "https://example.com/game-reserve"
+    },
+    {
+        "name": "Walter Sisulu Botanical Gardens",
+        "image": "images/botanical-gardens.webp",
+        "address": "Roodepoort, Gauteng, South Africa",
+        "description": "Home to stunning plant life and the famous Witpoortjie Waterfall.",
+        "link": "https://example.com/botanical-gardens"
+    },
+    {
+        "name": "Silverstar Casino",
+        "image": "images/silverstar-casino.webp",
+        "address": "Muldersdrift, Gauteng, South Africa",
+        "description": "A top entertainment destination featuring dining, gaming, and live shows.",
+        "link": "https://example.com/silverstar-casino"
+    },
+    {
+        "name": "Rhino and Lion Nature Reserve",
+        "image": "images/rhino-lion-reserve.webp",
+        "address": "Krugersdorp, Gauteng, South Africa",
+        "description": "A private game reserve offering up-close wildlife encounters.",
+        "link": "https://example.com/rhino-lion-reserve"
+    },
+    {
+        "name": "Ngwenya Glass Village",
+        "image": "images/ngwenya-glass.webp",
+        "address": "Muldersdrift, Gauteng, South Africa",
+        "description": "A craft village with handmade glass products and art galleries.",
+        "link": "https://example.com/ngwenya-glass"
+    },
+    {
+        "name": "The Cradle of Humankind",
+        "image": "images/cradle-humankind.webp",
+        "address": "Maropeng, Gauteng, South Africa",
+        "description": "A UNESCO World Heritage site with fascinating fossils and caves.",
+        "link": "https://example.com/cradle-humankind"
+    },
+    {
+        "name": "Lion & Safari Park",
+        "image": "images/lion-safari-park.webp",
+        "address": "Broederstroom, Gauteng, South Africa",
+        "description": "A must-visit attraction with lion encounters and game drives.",
+        "link": "https://example.com/lion-safari-park"
+    },
+    {
+        "name": "Sterkfontein Caves",
+        "image": "images/sterkfontein-caves.webp",
+        "address": "Krugersdorp, Gauteng, South Africa",
+        "description": "Famous limestone caves with important hominid fossil discoveries.",
+        "link": "https://example.com/sterkfontein-caves"
+    }
+]

@@ -1,0 +1,53 @@
+{
+    "locations": [
+      {
+        "name": "Krugersdorp Game Reserve",
+        "address": "Krugersdorp, Gauteng, South Africa",
+        "description": "A beautiful nature reserve home to zebras, giraffes, and many other wild animals.",
+        "image": "images/gameresrve.webp"
+      },
+      {
+        "name": "Walter Sisulu Botanical Gardens",
+        "address": "Roodepoort, Gauteng, South Africa",
+        "description": "Home to the famous waterfall and the Verreaux's Eagles nesting above.",
+        "image": "images/botanical.webp"
+      },
+      {
+        "name": "Silverstar Casino",
+        "address": "Muldersdrift, Krugersdorp, South Africa",
+        "description": "A world-class casino and entertainment destination.",
+        "image": "images/silver.webp"
+      },
+      {
+        "name": "Rhino and Lion Nature Reserve",
+        "address": "Kromdraai, Gauteng, South Africa",
+        "description": "A sanctuary for endangered species including lions, rhinos, and cheetahs.",
+        "image": "images/rhino.webp"
+      },
+      {
+        "name": "Ngwenya Glass Village",
+        "address": "Muldersdrift, Gauteng, South Africa",
+        "description": "A unique destination featuring handmade glassware and artisanal crafts.",
+        "image": "images/glass.webp"
+      },
+      {
+        "name": "Cradle of Humankind",
+        "address": "Maropeng, Gauteng, South Africa",
+        "description": "A UNESCO World Heritage Site with ancient fossils and human evolution history.",
+        "image": "images/cradle.webp"
+      },
+      {
+        "name": "Lion & Safari Park",
+        "address": "Broederstroom, North West, South Africa",
+        "description": "A thrilling safari experience where you can see lions up close.",
+        "image": "images/lion.webp"
+      },
+      {
+        "name": "Sterkfontein Caves",
+        "address": "Kromdraai, Gauteng, South Africa",
+        "description": "Famous for fossil discoveries and underground cave tours.",
+        "image": "images/caves.webp"
+      }
+    ]
+  }
+  
